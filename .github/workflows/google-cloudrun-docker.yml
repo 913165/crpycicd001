@@ -26,6 +26,6 @@ jobs:
     - name: Log in to Docker
       run: |
         docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD  }}
-        docker push tinumistry/cropycicd001:1.0 .
+        docker push tinumistry/cropycicd001:1.0 
 
       
