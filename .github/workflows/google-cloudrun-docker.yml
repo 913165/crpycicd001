@@ -43,7 +43,7 @@ jobs:
           service: crdemo-cicd
           region: us-central1
           image: docker.io/tinumistry/cropycicd001:1.0
-          flags: ' --allow-unauthenticated '
+          flags: ' --allow-unauthenticated --port 8000'
       - name: Show Output
         run: echo ${{ steps.deploy.outputs.url }} 
       
